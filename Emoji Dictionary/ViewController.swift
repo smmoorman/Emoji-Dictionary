@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
-
+    
     @IBOutlet weak var table1: UITableView!
     
     var emojis=["🌮","💋","😻","🐭","💩","🎃","👻","🙏","🤖","👾"]
@@ -38,7 +38,7 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
