@@ -17,7 +17,16 @@ class DefinitionViewController: UIViewController {
     @IBOutlet weak var emojiLabel: UILabel!
     var emoji = "no emoji"
     
+    @IBOutlet weak var category: UILabel!
+    
+    @IBOutlet weak var birthYearLabel: UILabel!
+    
+    
+    
     override func viewDidLoad() {
+        
+    
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -26,6 +35,8 @@ class DefinitionViewController: UIViewController {
         
         if emoji == "👾"{
             definitionLabel.text = "A space invader"
+            category.text = "Category: Alien"
+            birthYearLabel.text = "Birth Year: Unknown"
         }
         if emoji == "🌮"{
             definitionLabel.text = "A Taco"
