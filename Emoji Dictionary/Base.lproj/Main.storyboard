@@ -62,20 +62,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is an alien invader" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0M-OU-hnx">
-                                <rect key="frame" x="101.5" y="363" width="172.5" height="21"/>
+                                <rect key="frame" x="101.5" y="363" width="172.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Catgeory:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgk-dv-Far">
-                                <rect key="frame" x="101" y="410" width="173" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is an alien invader" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2DW-ND-Yri">
+                                <rect key="frame" x="101.5" y="399" width="172.5" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Birth Year:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHU-hJ-hGm">
-                                <rect key="frame" x="101" y="462" width="173" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is an alien invader" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfD-7Z-ioi">
+                                <rect key="frame" x="101" y="435" width="175" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -84,17 +84,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="e0M-OU-hnx" firstAttribute="centerX" secondItem="nQz-fJ-HO0" secondAttribute="centerX" id="AjZ-po-Spd"/>
                             <constraint firstItem="e0M-OU-hnx" firstAttribute="top" secondItem="WSN-Z1-zbW" secondAttribute="bottom" constant="20" id="FB1-Ta-f0M"/>
+                            <constraint firstItem="e0M-OU-hnx" firstAttribute="centerX" secondItem="nQz-fJ-HO0" secondAttribute="centerX" id="P06-3O-8Bm"/>
                             <constraint firstItem="WSN-Z1-zbW" firstAttribute="centerX" secondItem="nQz-fJ-HO0" secondAttribute="centerX" id="X7d-zV-eja"/>
-                            <constraint firstItem="e0M-OU-hnx" firstAttribute="centerX" secondItem="nQz-fJ-HO0" secondAttribute="centerX" id="ZoQ-rC-EEh"/>
                             <constraint firstItem="WSN-Z1-zbW" firstAttribute="top" secondItem="MxG-mi-xed" secondAttribute="bottom" constant="40" id="f9i-xk-MhM"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="birthYearLabel" destination="cHU-hJ-hGm" id="cOY-JH-BGZ"/>
-                        <outlet property="category" destination="Lgk-dv-Far" id="e3q-t6-w6o"/>
-                        <outlet property="definitionLabel" destination="e0M-OU-hnx" id="ddM-4V-7Fs"/>
-                        <outlet property="emojiLabel" destination="WSN-Z1-zbW" id="Ukv-dK-tSo"/>
+                        <outlet property="birthYearLabel" destination="zfD-7Z-ioi" id="GbN-ZG-KaN"/>
+                        <outlet property="categoryLabel" destination="2DW-ND-Yri" id="vp1-ud-EUf"/>
+                        <outlet property="definitionLabel" destination="e0M-OU-hnx" id="B0C-Ev-QId"/>
+                        <outlet property="emojiLabel" destination="WSN-Z1-zbW" id="M4H-6h-9ek"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8GN-KR-fuL" userLabel="First Responder" sceneMemberID="firstResponder"/>

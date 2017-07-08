@@ -10,16 +10,16 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
     
+   var emoji = Emoji()
+    @IBOutlet weak var emojiLabel: UILabel!
+    
     @IBOutlet weak var definitionLabel: UILabel!
     
+    @IBOutlet weak var categoryLabel: UILabel!
     
-    
-    @IBOutlet weak var emojiLabel: UILabel!
-    var emoji = "no emoji"
-    
-    @IBOutlet weak var category: UILabel!
     
     @IBOutlet weak var birthYearLabel: UILabel!
+    
     
     
     
@@ -31,45 +31,20 @@ class DefinitionViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        emojiLabel.text! = emoji
+        emojiLabel.text = emoji.stringEmoji
+        definitionLabel.text = "Definition: \(emoji.definition)"
+        categoryLabel.text = "Category: \(emoji.category)"
+        birthYearLabel.text = "Birth Year: \(emoji.birthYear)"
         
-        if emoji == "👾"{
-            definitionLabel.text = "A space invader"
-            category.text = "Category: Alien"
-            birthYearLabel.text = "Birth Year: Unknown"
-        }
-        if emoji == "🌮"{
-            definitionLabel.text = "A Taco"
-        }
-        if emoji == "💋"{
-            definitionLabel.text = "Kissy Lips"
-        }
-        if emoji == "😻"{
-            definitionLabel.text = "Lovey Cat"
-        }
-        if emoji == "🐭"{
-            definitionLabel.text = "An invadaing mouse"
-        }
-        if emoji == "💩"{
-            definitionLabel.text = "Poop"
-        }
-        if emoji == "🎃"{
-            definitionLabel.text = "A Pumpkin"
-        }
-        if emoji == "👻"{
-            definitionLabel.text = "A Ghost"
-        }
-        if emoji == "🙏"{
-            definitionLabel.text = "Time to eat."
-        }
-        if emoji == "🤖"{
-            definitionLabel.text = "A Robot"
-        }
+        
+        
+        
         
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
     
 
@@ -82,5 +57,7 @@ class DefinitionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
+
+
+
